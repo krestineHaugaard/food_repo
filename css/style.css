@@ -1,0 +1,46 @@
+@import 'variables.css';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontTitle);
+}
+
+body {
+    > header, > footer {
+        padding: 0.5rem 1rem;
+        color: var(--colourBgComplementary);
+        background-color: var(--colourBgMain);
+        text-align: center;
+    }
+}
+
+nav{
+    text-align: center;
+    background-color: var(--colourBgNav);
+    > ul{
+        display:flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 1rem;
+        list-style: none;
+
+        > li > a{
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--colourBgComplementary);
+        }
+    }
+}
+
+main{
+    padding: 0.5rem 1rem;
+}
+
+button{
+    color: var(--colourBgComplementary);
+    background-color: var(--colourBgMain);
+    border: none;
+}
